@@ -1,7 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color: #000;
+    --second-color: #6d98baff;
+    --main-color: #bb8588ff;
+    --bg-color: #fbfbfbff;
+    --big-font: 4rem;
+    --h3-font: 3rem;
+    --p-font: 1.1rem;
+}
 body{
-    background-color: lightblue;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
-h1{
-    color: navy;
-    margin-left: 20px;
+.logo{
+    width: 100px;
+    max-width: 100%;
+    height: auto;
 }
+header{
+    padding: 5px 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--bg-color);
+    width: 100%;
+    box-shadow: 2px 50px 88px -26px rgba(0,0,0,0.45);
+}
+.nav-links{
+    padding: 10px 28px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all ease;
+}
+.nav-links:hover{
+    color: var(--main-color);
+}
+.container{
+    padding: 100px 18%;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+.main-image{
+    width: 500px;
+    max-width: 100%;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-text h3{
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 0 5px;
+}
+.main-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 2;
+    color: #707070;
+}
+
