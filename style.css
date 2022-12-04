@@ -107,7 +107,9 @@ section {
 .about-text {
   color: var(--main-color);
   text-align: center;
-  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration-line: underline;
 }
 span {
   color: rgba(48, 48, 48, 0.819);
@@ -126,8 +128,8 @@ span {
 .family-work {
   background-color: #211e1e;
 }
-.family-work h1 {
-  color: var(--bg-color);
+.family-work h3 {
+  color: whitesmoke;
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
@@ -145,6 +147,10 @@ span {
 }
 .work {
   padding-right: 20px;
+}
+.work h4 {
+  color: white;
+  padding: 5px 0 10px;
 }
 .work p {
   color: #707070;
