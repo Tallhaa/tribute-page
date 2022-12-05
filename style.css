@@ -129,7 +129,8 @@ span {
   background-color: #211e1e;
 }
 .family-work h3,
-.his-family h3 {
+.his-family h3,
+.his-social-media h4 {
   color: whitesmoke;
   text-align: center;
   margin-bottom: 40px;
@@ -160,6 +161,10 @@ span {
 }
 
 /* *His family */
+.his-family,
+.his-social-media {
+  padding: 80px 17%;
+}
 .his-family h3 {
   color: #7c7c7c;
 }
@@ -167,8 +172,6 @@ span {
 .his-family-wrapper {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
 }
 .hisfamily1 {
   display: flex;
@@ -187,4 +190,41 @@ span {
   color: #737373;
   font-size: 1rem;
   font-weight: 300;
+}
+
+/* *His Social Media */
+.his-social-media {
+  background-color: #211e1e;
+}
+.his-social-media h4 {
+}
+.his-social-media-wrapper-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.his-social-media-wrapper {
+  max-width: 300px;
+  width: 100%;
+  background-color: white;
+}
+
+.his-social-media-wrapper h5 {
+  border-bottom: 1px solid #ddd;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.his-social-media-wrapper p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.bxl-instagram,
+.his-social-media-wrapper h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.his-social-media-wrapper h5,
+p {
+  padding: 15px 30px;
 }
