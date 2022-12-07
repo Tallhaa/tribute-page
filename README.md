@@ -1,4 +1,2 @@
-# Hello world
-
-nav list and hello world repository for git tutorial.
-This is an example repository for the Git tutoial.
+This is Tribute page designed by tallhaa 💥
+inspired by behance design 💣 https://www.behance.net/gallery/114765193/Tribute-web-page-website-design?tracking_source=search_projects_recommended%7CTribute+Website
