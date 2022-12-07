@@ -57,6 +57,7 @@ header {
 
 .main-text {
   max-width: 500px;
+  width: 100%;
 }
 .main-text h3 {
   color: var(--main-color);
@@ -107,21 +108,24 @@ section {
 .about-text {
   color: var(--main-color);
   text-align: center;
+  margin-bottom: 40px;
   font-size: 2rem;
   font-weight: 500;
   text-decoration-line: underline;
 }
-span {
-  color: rgba(48, 48, 48, 0.819);
-  font-size: var(--h3-font);
-  font-weight: 300;
-  padding-right: 5px;
+.about-paragraph span {
+  color: var(--bg-color);
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 22px;
 }
 .about-paragraph {
   margin-bottom: 50px;
   color: rgba(0, 0, 0, 0.589);
   font-size: var(--p-font);
   line-height: 1.1;
+  display: inline-block;
 }
 
 /* *family work */
@@ -150,14 +154,20 @@ span {
 .work {
   padding-right: 20px;
 }
+.work h4,
+.work p {
+  display: flex;
+  align-items: flex-start;
+}
 .work h4 {
-  color: white;
+  color: var(--main-color);
   padding: 5px 0 10px;
 }
 .work p {
   color: #707070;
   font-size: 16x;
   font-weight: 300;
+  padding: 5px 0 10px;
 }
 
 /* *His family */
@@ -182,6 +192,11 @@ span {
 .his-family-img {
   padding-right: 40px;
 }
+.family-text h4,
+.family-text p {
+  display: flex;
+  padding: 10px 0;
+}
 .family-text h4 {
   font-size: 20px;
   font-weight: 500;
@@ -205,6 +220,10 @@ span {
   max-width: 300px;
   width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .his-social-media-wrapper h5 {
@@ -212,18 +231,150 @@ span {
   font-size: 2rem;
   font-weight: 400;
 }
+.his-social-media-wrapper,
 .his-social-media-wrapper p {
   font-size: 1rem;
   font-weight: 300;
+  border-radius: 2%;
 }
 .bxl-instagram,
-.his-social-media-wrapper h5 {
+.his-social-media-wrapper h5,
+.his-social-media-wrapper button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.his-social-media-wrapper button {
+  text-align: center;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 15px 32px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4%;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
 
 .his-social-media-wrapper h5,
-p {
+.his-social-media-wrapper p {
   padding: 15px 30px;
+}
+
+/* *Donation */
+
+.donation {
+  background-image: url(assets/donation-background-img.jpg);
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.donation-wrapper {
+  background-color: rgb(33, 32, 32);
+  opacity: 0.7;
+  color: #fff;
+  max-width: 404px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1%;
+}
+.donation-wrapper h5,
+.donation-wrapper p {
+  padding: 20px 40px;
+}
+.donation-wrapper h5 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.donation-wrapper p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.help {
+  margin: 10px auto;
+}
+.donation-wrapper button {
+  text-align: center;
+  background-color: var(--text-color);
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5%;
+  transform: 0.5;
+}
+.donation-wrapper button:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  transform: scale(2px);
+}
+
+/* *About US */
+.about-us {
+  padding: 40px 8%;
+}
+
+.about-us h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  color: #737373;
+  font-weight: 1.1rem;
+}
+
+/* *footer */
+.footer {
+  background-color: #211e1e;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 8%;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper1 {
+  flex-basis: 50%;
+}
+
+.footer-wrapper h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.fotter-form label,
+.fotter-links,
+.footer-wrapper2 p {
+  color: #7c7c7c;
+}
+.footer-form {
+  display: flex;
+  justify-content: center;
+}
+.fotter-form label {
+  font-size: 1.2rem;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  outline: none;
+}
+input[type="submit"] {
+  width: 50%;
+  height: 70px;
+  font-size: 1.2rem;
 }
