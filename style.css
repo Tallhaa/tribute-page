@@ -104,6 +104,9 @@ section {
 .about-image {
   border-radius: 50%;
   border: 12px solid rgb(255, 255, 255);
+  width: 350px;
+  display: flex;
+  align-self: flex-start;
 }
 .about-text {
   color: var(--main-color);
@@ -369,7 +372,7 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 20px 0;
   border: none;
   outline: none;
 }
@@ -377,4 +380,7 @@ input[type="submit"] {
   width: 50%;
   height: 70px;
   font-size: 1.2rem;
+}
+.fotter-links {
+  margin-bottom: 10px;
 }
